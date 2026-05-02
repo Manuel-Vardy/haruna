@@ -7,8 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // 1. Navbar Scroll Effect
     const navbar = document.querySelector('.navbar-custom');
+    const isNoScroll = navbar && navbar.classList.contains('navbar-no-scroll');
+
     if (navbar) {
         window.addEventListener('scroll', () => {
+            if (isNoScroll) return; // Don't toggle classes if it should stay scrolled
+
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
@@ -17,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         // Check initial state (if page is refreshed while scrolled)
-        if (window.scrollY > 50) {
+        if (window.scrollY > 50 || isNoScroll) {
             navbar.classList.add('scrolled');
         }
     }

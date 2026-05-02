@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hon. Haruna Iddrisu - News</title>
-    <link rel="icon" type="image/png" href="images/haruna-04.png">
+    <title>News & Updates - Haruna Iddrisu</title>
+    <link rel="icon" type="image/png" href="images/favicon-1.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -29,10 +29,10 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top scrolled navbar-no-scroll">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/haruna 2-09.png" alt="Hon. Haruna Iddrisu">
+                <img src="images/haruna 2-09.png" alt="Haruna Iddrisu">
             </a>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav">
@@ -76,24 +76,39 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <div class="page-header">
-        <div class="container text-center">
-            <h1 class="display-5 font-bold text-white mb-3">Latest News</h1>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <section class="py-20 min-vh-50">
+    <!-- News Hero / Featured Carousel -->
+    <section class="news-hero pt-32 pb-20">
         <div class="container">
-            
-            <div class="text-center py-16">
-                <div class="inline-flex items-center justify-center w-24 h-24 rounded-full bg-gray-100 mb-6">
-                    <i class="bi bi-newspaper text-gray-400 text-5xl"></i>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="display-3 font-bold mb-10 reveal">Latest Updates</h1>
+                    
+                    <div id="newsCarousel" class="carousel slide reveal delay-100" data-bs-ride="carousel">
+                        <div class="carousel-inner" id="carousel-inner">
+                            <!-- Dynamic Carousel Slides Here -->
+                        </div>
+                        
+                        <!-- Carousel Controls -->
+                        <div class="news-carousel-controls">
+                            <button class="carousel-control-prev-custom" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            
+                            <div class="carousel-indicators carousel-indicators-custom" id="carousel-indicators">
+                                <!-- Dynamic Indicators Here -->
+                            </div>
+
+                            <button class="carousel-control-next-custom" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="h4 font-bold text-gray-800 mb-3">News & Updates Coming Soon</h3>
-                <p class="text-gray-500 max-w-md mx-auto">We are currently curating the latest news and press releases. Please check back later for updates on Hon. Haruna Iddrisu's recent activities and announcements.</p>
-                <a href="index.html" class="btn btn-primary-custom mt-6">Return Home</a>
+            </div>
+
+            <!-- News Grid -->
+            <div class="row g-4 pt-20" id="news-grid">
+                <!-- Dynamic News Cards Here -->
             </div>
 
         </div>
@@ -115,7 +130,6 @@
                     <h5 class="font-bold mb-4">Quick Links</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="about.html" class="footer-link">Who He Is</a></li>
-
                         <li><a href="projects.html" class="footer-link">Projects</a></li>
                         <li><a href="initiatives.html" class="footer-link">Initiatives</a></li>
                     </ul>
@@ -142,8 +156,8 @@
             <div class="border-t pt-4 mt-8 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
                 <p class="text-gray-500 text-sm mb-0">&copy; 2026 Haruna Iddrisu. All rights reserved.</p>
                 <div class="d-flex gap-4">
-                    <a href="#" class="text-gray-500 text-sm hover:text-brand-green transition-colors text-decoration-none">Privacy Policy</a>
-                    <a href="#" class="text-gray-500 text-sm hover:text-brand-green transition-colors text-decoration-none">Terms of Service</a>
+                    <a href="privacy-policy.html" class="text-gray-500 text-sm hover:text-brand-green transition-colors text-decoration-none">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="text-gray-500 text-sm hover:text-brand-green transition-colors text-decoration-none">Terms of Service</a>
                 </div>
             </div>
         </div>
@@ -151,6 +165,79 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- News Data -->
+    <script src="js/news-data.js"></script>
+    <!-- Dynamic Loading Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carouselInner = document.getElementById('carousel-inner');
+            const carouselIndicators = document.getElementById('carousel-indicators');
+            const newsGrid = document.getElementById('news-grid');
+
+            // Render Carousel (First 4 articles)
+            const featured = newsData.slice(0, 4);
+            featured.forEach((item, index) => {
+                // Slide
+                const slide = document.createElement('div');
+                slide.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+                slide.innerHTML = `
+                    <div class="news-carousel-item">
+                        <img src="${item.image}" class="news-carousel-img" alt="News">
+                        <div class="news-carousel-overlay">
+                            <h2 class="news-carousel-title">${item.title}</h2>
+                            <div class="news-date">
+                                <i class="bi bi-clock"></i> ${item.date.split(',')[0]}
+                            </div>
+                            <a href="news-article.html?id=${item.id}" class="stretched-link"></a>
+                        </div>
+                    </div>
+                `;
+                carouselInner.appendChild(slide);
+
+                // Indicator
+                const indicator = document.createElement('button');
+                indicator.type = 'button';
+                indicator.setAttribute('data-bs-target', '#newsCarousel');
+                indicator.setAttribute('data-bs-slide-to', index);
+                if (index === 0) {
+                    indicator.className = 'active';
+                    indicator.setAttribute('aria-current', 'true');
+                }
+                indicator.setAttribute('aria-label', `Slide ${index + 1}`);
+                carouselIndicators.appendChild(indicator);
+            });
+
+            // Render Grid (All articles)
+            newsData.forEach((item, index) => {
+                const col = document.createElement('div');
+                col.className = 'col-lg-4 col-md-6 reveal';
+                if (index % 3 === 1) col.classList.add('delay-100');
+                if (index % 3 === 2) col.classList.add('delay-200');
+
+                col.innerHTML = `
+                    <div class="news-card">
+                        <div class="news-card-img-wrapper">
+                            <img src="${item.image}" class="news-card-img" alt="News">
+                        </div>
+                        <div class="news-card-body">
+                            <span class="news-card-category">${item.category}</span>
+                            <h3 class="news-card-title">${item.title}</h3>
+                            <p class="news-card-excerpt">${item.lead.substring(0, 120)}...</p>
+                            <div class="news-card-footer">
+                                <span class="news-date text-gray-400">
+                                    <i class="bi bi-clock"></i> ${item.date.split(',')[0]}
+                                </span>
+                                <a href="news-article.html?id=${item.id}" class="read-article-link stretched-link">
+                                    Read Full Article <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                newsGrid.appendChild(col);
+            });
+        });
+    </script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>

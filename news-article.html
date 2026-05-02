@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hon. Haruna Iddrisu - Connect</title>
+    <title id="page-title">News Article - Haruna Iddrisu</title>
     <link rel="icon" type="image/png" href="images/favicon-1.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -26,13 +26,13 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-gray-50">
+<body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top scrolled navbar-no-scroll">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/haruna 2-09.png" alt="Hon. Haruna Iddrisu">
+                <img src="images/haruna 2-09.png" alt="Haruna Iddrisu">
             </a>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav">
@@ -59,7 +59,7 @@
                         <a class="nav-link" href="initiatives.html">Initiatives</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="news.html">News</a>
+                        <a class="nav-link active" href="news.html">News</a>
                     </li>
                     <li class="nav-item ms-lg-3 mt-3 mt-lg-0 d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-3">
                         <a class="btn btn-primary-custom" href="connect.html">Partner With Me</a>
@@ -76,124 +76,88 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <div class="page-header">
-        <div class="container text-center">
-            <h1 class="display-5 font-bold text-white mb-3">Connect & Engage</h1>
+    <!-- Article Header -->
+    <header class="article-header pt-20">
+        <div class="article-header-bg">
+            <img id="article-img" src="" alt="Article Header">
         </div>
-    </div>
-
-    <!-- Main Content -->
-    <section class="py-20">
-        <div class="container">
-            
-            <div class="row g-5">
-                <div class="col-lg-5">
-                    <div class="h-100 relative">
-                        
-                        <h2 class="h3 font-bold text-dark mb-4">Connect with me</h2>
-                        <p class="text-gray-600 mb-5">Follow Hon. Haruna Iddrisu on social media to stay updated with his daily activities and engagements.</p>
-                        
-                        <div class="gradient-menu-container">
-                            <!-- X (Twitter) -->
-                            <a href="https://x.com/harunaspeaks1?s=11" target="_blank" rel="noopener noreferrer" 
-                               class="gradient-menu-item" style="--gradient-from: #000000; --gradient-to: #444444;">
-                                <div class="hover-bg"></div>
-                                <div class="glow-bg"></div>
-                                <div class="icon-wrapper">
-                                    <i class="bi bi-twitter-x"></i>
-                                </div>
-                                <span class="title-text">Twitter</span>
-                            </a>
-
-                            <!-- Facebook -->
-                            <a href="https://www.facebook.com/share/18uQNQma5G/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" 
-                               class="gradient-menu-item" style="--gradient-from: #1877F2; --gradient-to: #0056b3;">
-                                <div class="hover-bg"></div>
-                                <div class="glow-bg"></div>
-                                <div class="icon-wrapper">
-                                    <i class="bi bi-facebook"></i>
-                                </div>
-                                <span class="title-text">Facebook</span>
-                            </a>
-
-                            <!-- Instagram -->
-                            <a href="https://www.instagram.com/iharunaiddrisu/" target="_blank" rel="noopener noreferrer" 
-                               class="gradient-menu-item" style="--gradient-from: #833ab4; --gradient-to: #fd1d1d;">
-                                <div class="hover-bg"></div>
-                                <div class="glow-bg"></div>
-                                <div class="icon-wrapper">
-                                    <i class="bi bi-instagram"></i>
-                                </div>
-                                <span class="title-text">Instagram</span>
-                            </a>
-
-                            <!-- YouTube -->
-                            <a href="https://www.youtube.com/channel/UCPBLZrLNTptB8PMKSgnjTgw" target="_blank" rel="noopener noreferrer" 
-                               class="gradient-menu-item" style="--gradient-from: #FF0000; --gradient-to: #b30000;">
-                                <div class="hover-bg"></div>
-                                <div class="glow-bg"></div>
-                                <div class="icon-wrapper">
-                                    <i class="bi bi-youtube"></i>
-                                </div>
-                                <span class="title-text">YouTube</span>
-                            </a>
-                        </div>
+        <div class="article-header-overlay"></div>
+        <div class="container article-header-content">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="article-breadcrumb">
+                        <a href="news.html">News & Update</a>
+                        <span>/</span>
+                        <span id="breadcrumb-category">Category</span>
                     </div>
-                </div>
-
-                <div class="col-lg-7">
-                    <div class="d-flex flex-column gap-5 h-100">
-                        
-                        <!-- Partner With Me -->
-                        <div class="bg-brand-green text-white rounded-0 shadow-lg p-5 p-lg-5 relative overflow-hidden">
-                            <div class="relative z-10 d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-                                <div>
-                                    <h2 class="h3 font-bold mb-3">Partner With Me</h2>
-                                    <p class="text-green-50 mb-0 opacity-90 max-w-md">Collaborate with us on strategic initiatives that drive national development, education reform, and economic empowerment.</p>
-                                </div>
-                                <a href="#" class="btn btn-light rounded-pill px-4 py-3 font-bold text-brand-green flex-shrink-0">Become a Partner</a>
-                            </div>
-                        </div>
-
-                        <!-- Join Us -->
-                        <div class="bg-white rounded-0 shadow-sm p-5 p-lg-5 relative overflow-hidden">
-                            <h2 class="h3 font-bold text-dark mb-3">Join Us</h2>
-                            <p class="text-gray-600 mb-4">Be a part of a community dedicated to integrity, growth, and service to the nation. Sign up to volunteer or join our grassroots movements.</p>
-                            
-                            <form class="row g-3">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control form-control-lg bg-gray-50 border-0" placeholder="Full Name">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" class="form-control form-control-lg bg-gray-50 border-0" placeholder="Email Address">
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary-custom w-100 py-3">Submit Application</button>
-                                </div>
-                            </form>
-                        </div>
-
-                        <!-- Donate Now -->
-                        <div class="bg-brand-red text-white rounded-0 shadow-lg p-5 p-lg-5 relative overflow-hidden">
-                            <div class="relative z-10 d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-                                <div>
-                                    <h2 class="h3 font-bold mb-3">Donate Now</h2>
-                                    <p class="text-red-50 mb-0 opacity-90 max-w-md">Your financial contributions support scholarships, infrastructure development, and youth empowerment programs.</p>
-                                </div>
-                                <a href="#" class="btn btn-light rounded-pill px-4 py-3 font-bold text-brand-red flex-shrink-0">Make a Donation</a>
-                            </div>
-                        </div>
-
-                    </div>
+                    <span id="badge-category" class="news-badge bg-white text-brand-red px-2 py-1 rounded-0 text-xs font-bold uppercase mb-4 d-inline-block">Category</span>
+                    <h1 id="article-title" class="display-4 font-bold mb-0">Article Title</h1>
                 </div>
             </div>
+        </div>
+    </header>
 
+    <!-- Article Content Section -->
+    <section class="pb-20 pt-10">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Main Article Content -->
+                <div class="col-lg-8">
+                    <div class="article-meta-info mb-10">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-clock text-brand-green"></i>
+                            <span id="article-date" class="text-gray-500 font-bold">Date</span>
+                        </div>
+                        <div id="source-separator" class="d-none d-md-block h-4 border-l border-gray-300"></div>
+                        <div id="source-wrapper" class="d-flex align-items-center gap-2">
+                            <span class="text-gray-400">Source:</span>
+                            <span id="article-source" class="text-dark font-bold">Source</span>
+                        </div>
+                        <div id="readtime-separator" class="d-none d-md-block h-4 border-l border-gray-300"></div>
+                        <div id="readtime-wrapper" class="d-flex align-items-center gap-2">
+                            <i class="bi bi-book text-gray-400"></i>
+                            <span id="article-readtime" class="text-gray-500">Read Time</span>
+                        </div>
+                    </div>
+
+                    <div class="article-body-content">
+                        <p id="article-lead" class="lead font-bold text-dark mb-5 text-xl">
+                            Lead paragraph...
+                        </p>
+                        
+                        <div id="article-main-content">
+                            <!-- Dynamic Content Here -->
+                        </div>
+                    </div>
+
+                    <!-- Share Section -->
+                    <div class="border-t border-b py-5 mt-10 d-flex justify-content-between align-items-center">
+                        <span class="font-bold text-dark">Share this article:</span>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar (Related News) -->
+                <div class="col-lg-4">
+                    <aside class="sticky-sidebar">
+                        <h2 class="news-sidebar-title">Related News</h2>
+                        
+                        <div id="sidebar-news-list" class="sidebar-news-list">
+                            <!-- Dynamic Sidebar Items Here -->
+                        </div>
+                    </aside>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white">
+    <footer>
         <div class="container">
             <div class="row g-4 mb-4">
                 <div class="col-lg-4">
@@ -208,7 +172,6 @@
                     <h5 class="font-bold mb-4">Quick Links</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="about.html" class="footer-link">Who He Is</a></li>
-
                         <li><a href="projects.html" class="footer-link">Projects</a></li>
                         <li><a href="initiatives.html" class="footer-link">Initiatives</a></li>
                     </ul>
@@ -244,11 +207,77 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- News Data -->
+    <script src="js/news-data.js"></script>
+    <!-- Dynamic Loading Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get ID from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const articleId = urlParams.get('id');
+
+            if (!articleId) {
+                window.location.href = 'news.html';
+                return;
+            }
+
+            // Find article
+            const article = newsData.find(item => item.id === articleId);
+
+            if (!article) {
+                window.location.href = 'news.html';
+                return;
+            }
+
+            // Populate Page
+            document.title = `${article.title} - Haruna Iddrisu`;
+            document.getElementById('article-img').src = article.image;
+            document.getElementById('breadcrumb-category').textContent = article.category;
+            document.getElementById('badge-category').textContent = article.category;
+            document.getElementById('article-title').textContent = article.title;
+            document.getElementById('article-date').textContent = article.date;
+            
+            // Handle Source
+            if (article.source) {
+                document.getElementById('article-source').textContent = article.source;
+            } else {
+                document.getElementById('source-wrapper').style.display = 'none';
+                document.getElementById('source-separator').style.display = 'none';
+            }
+
+            // Handle Read Time
+            if (article.readTime) {
+                document.getElementById('article-readtime').textContent = article.readTime;
+            } else {
+                document.getElementById('readtime-wrapper').style.display = 'none';
+                document.getElementById('readtime-separator').style.display = 'none';
+            }
+
+            document.getElementById('article-lead').textContent = article.lead;
+            document.getElementById('article-main-content').innerHTML = article.content;
+
+            // Populate Sidebar (Related News)
+            const sidebarList = document.getElementById('sidebar-news-list');
+            const relatedArticles = newsData.filter(item => item.id !== articleId).slice(0, 4);
+
+            relatedArticles.forEach(item => {
+                const card = document.createElement('a');
+                card.href = `news-article.html?id=${item.id}`;
+                card.className = 'sidebar-news-card';
+                card.innerHTML = `
+                    <img src="${item.image}" class="sidebar-news-img" alt="News">
+                    <div class="sidebar-news-content">
+                        <h3 class="sidebar-news-title">${item.title}</h3>
+                        <span class="sidebar-news-date">${item.date.split(',')[0]}</span>
+                    </div>
+                `;
+                sidebarList.appendChild(card);
+            });
+        });
+    </script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
 </html>
-
-
 
 
