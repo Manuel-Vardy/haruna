@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hon. Haruna Iddrisu - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green': '#006b3f',
+                        'brand-red': '#ce1126',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/haruna 2-09.png" alt="Hon. Haruna Iddrisu">
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 lg:items-center items-start">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Who He Is</a>
+                    </li>
+
+                                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="projects.html" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                        <ul class="dropdown-menu border-0 shadow" aria-labelledby="projectsDropdown">
+                            <li><a class="dropdown-item" href="projects.html#tamale-south">Tamale South</a></li>
+                            <li><a class="dropdown-item" href="projects.html#communications">Minister for Communications</a></li>
+                            <li><a class="dropdown-item" href="projects.html#education">Minister for Education</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="initiatives.html">Initiatives</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0 d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-3">
+                        <a class="btn btn-primary-custom" href="connect.html">Partner With Me</a>
+                        <div class="nav-separator d-none d-lg-block"></div>
+                        <div class="d-flex gap-2 ms-lg-0 ms-0">
+                            <a href="https://x.com/harunaspeaks1?s=11" target="_blank" rel="noopener noreferrer"
+                                class="nav-social-link"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://www.facebook.com/share/18uQNQma5G/?mibextid=wwXIfr" target="_blank"
+                                rel="noopener noreferrer" class="nav-social-link"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-mobile-bg"></div>
+        <div class="hero-bg-accent"></div>
+        <div class="hero-bg-accent-2"></div>
+        <div class="container hero-content h-100">
+            <div class="row align-items-center h-100 min-vh-75">
+                <div class="col-lg-6 py-5 pb-lg-5 mb-0">
+                    <h1 class="hero-title-thin text-white mb-5">
+                        <span class="animate-left">Dedicated</span>
+                        <span class="animate-right">Public Servant</span>
+                        <span class="animate-popup">& Visionary Leader</span>
+                    </h1>
+                    <p class="lead text-gray-300 mb-5 text-lg pe-lg-5 animate-desc-reveal">
+                        Hon. Haruna Iddrisu is a distinguished Ghanaian statesman, legal practitioner, and dedicated
+                        public servant whose career is defined by eloquence, pragmatic leadership, and a steadfast
+                        commitment to the development of Ghana.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap animate-fade-up" style="animation-delay: 5s;">
+                        <a href="about.html" class="btn btn-outline-brand px-4 py-3">Discover More</a>
+                        <a href="connect.html" class="btn btn-secondary-custom px-4 py-3">Join Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block h-100 position-relative">
+                    <div class="hero-image-container justify-content-end">
+                        <img src="images/h2-Photoroom.png" alt="Hon. Haruna Iddrisu" class="img-fluid drop-shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Brief Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container">
+            <div>
+                <h2 class="section-title text-5xl font-light">A Legacy of Service</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Achievements Card -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="color-change-card group" onclick="location.href='about.html#achievements'">
+                        <div class="bg-image" style="background-image: url('images/h1.jpg');"></div>
+                        <div class="card-content">
+                            <i class="bi bi-arrow-right-short arrow-icon"></i>
+                            <div>
+                                <h4 class="rolling-text mb-2" data-text="Achievements"></h4>
+                                <p class="text-sm mb-0">From Education Reform to telecommunications modernization, leading impactful policy innovations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Card -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="color-change-card group" onclick="location.href='projects.html'">
+                        <div class="bg-image" style="background-image: url('images/h2.jpg');"></div>
+                        <div class="card-content">
+                            <i class="bi bi-arrow-right-short arrow-icon"></i>
+                            <div>
+                                <h4 class="rolling-text mb-2" data-text="Projects"></h4>
+                                <p class="text-sm mb-0">Spearheading the 24-Hour Economy Market and resolving the Northern Water Crisis in Tamale South.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Initiatives Card -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="color-change-card group" onclick="location.href='initiatives.html'">
+                        <div class="bg-image" style="background-image: url('images/h3.jpg');"></div>
+                        <div class="card-content">
+                            <i class="bi bi-arrow-right-short arrow-icon"></i>
+                            <div>
+                                <h4 class="rolling-text mb-2" data-text="Initiatives"></h4>
+                                <p class="text-sm mb-0">Empowering youth through the Digital Centre, Scholarships, and the transformative Bridge Initiative.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Connect Card -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="color-change-card group" onclick="location.href='connect.html'">
+                        <div class="bg-image" style="background-image: url('images/h4.jpg');"></div>
+                        <div class="card-content">
+                            <i class="bi bi-arrow-right-short arrow-icon"></i>
+                            <div>
+                                <h4 class="rolling-text mb-2" data-text="Connect"></h4>
+                                <p class="text-sm mb-0">Stay updated on news and join the movement for progress and accountability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <a class="d-inline-flex mb-4" href="index.html">
+                        <img src="images/haruna 2-08.png" alt="Hon. Haruna Iddrisu" class="footer-logo">
+                    </a>
+                    <p class="text-gray-500 text-sm pe-lg-4">
+                        A dedicated public servant committed to the development of Ghana, advocating for the rights and
+                        welfare of the Ghanaian people.
+                    </p>
+                </div>
+                <div class="col-lg-2 offset-lg-2 col-md-4">
+                    <h5 class="font-bold mb-4">Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="about.html" class="footer-link">Who He Is</a></li>
+
+                        <li><a href="projects.html" class="footer-link">Projects</a></li>
+                        <li><a href="initiatives.html" class="footer-link">Initiatives</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="font-bold mb-4">Engagement</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="news.html" class="footer-link">News</a></li>
+                        <li><a href="connect.html" class="footer-link">Partner With Me</a></li>
+                        <li><a href="connect.html" class="footer-link">Join Us</a></li>
+                        <li><a href="connect.html" class="footer-link">Donate Now</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="font-bold mb-4">Connect</h5>
+                    <div class="d-flex gap-2">
+                        <a href="https://x.com/harunaspeaks1?s=11" target="_blank" rel="noopener noreferrer"
+                            class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/share/18uQNQma5G/?mibextid=wwXIfr" target="_blank"
+                            rel="noopener noreferrer" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/iharunaiddrisu/" target="_blank" rel="noopener noreferrer"
+                            class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCPBLZrLNTptB8PMKSgnjTgw" target="_blank" rel="noopener noreferrer"
+                            class="social-icon"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-t pt-4 mt-8 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <p class="text-gray-500 text-sm mb-0">&copy; 2026 Hon. Haruna Iddrisu. All rights reserved.</p>
+                <div class="d-flex gap-4">
+                    <a href="#"
+                        class="text-gray-500 text-sm hover:text-brand-green transition-colors text-decoration-none">Privacy
+                        Policy</a>
+                    <a href="#"
+                        class="text-gray-500 text-sm hover:text-brand-green transition-colors text-decoration-none">Terms
+                        of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Rolling Text Generation
+        document.querySelectorAll('.rolling-text').forEach(el => {
+            const text = el.getAttribute('data-text');
+            el.innerHTML = text.split('').map((char, i) => `
+                <div class="rolling-text-letter">
+                    <span class="letter-wrapper" style="--delay: ${i * 0.035}s">
+                        <span>${char === ' ' ? '&nbsp;' : char}</span>
+                        <span>${char === ' ' ? '&nbsp;' : char}</span>
+                    </span>
+                </div>
+            `).join('');
+        });
+    </script>
+</body>
+
+</html>
