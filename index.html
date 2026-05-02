@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hon. Haruna Iddrisu - Home</title>
+    <link rel="icon" type="image/png" href="images/haruna-04.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -52,8 +53,8 @@
                         <a class="nav-link dropdown-toggle" href="projects.html" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
                         <ul class="dropdown-menu border-0 shadow" aria-labelledby="projectsDropdown">
                             <li><a class="dropdown-item" href="projects.html#tamale-south">Tamale South</a></li>
-                            <li><a class="dropdown-item" href="projects.html#communications">Minister for Communications</a></li>
                             <li><a class="dropdown-item" href="projects.html#education">Minister for Education</a></li>
+                            <li><a class="dropdown-item" href="projects.html#communications">Minister for Communication</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -134,7 +135,7 @@
                 <!-- Projects Card -->
                 <div class="col-md-6 col-lg-6">
                     <div class="color-change-card group" onclick="location.href='projects.html'">
-                        <div class="bg-image" style="background-image: url('images/h2.jpg');"></div>
+                        <div class="bg-image" style="background-image: url('images/haruna-defence-1.jpg');"></div>
                         <div class="card-content">
                             <i class="bi bi-arrow-right-short arrow-icon"></i>
                             <div>
@@ -182,7 +183,7 @@
             <div class="row g-4 mb-4">
                 <div class="col-lg-4">
                     <a class="d-inline-flex mb-4" href="index.html">
-                        <img src="images/haruna 2-08.png" alt="Hon. Haruna Iddrisu" class="footer-logo">
+                        <img src="images/haruna 2-10.png" alt="Hon. Haruna Iddrisu" class="footer-logo">
                     </a>
                     <p class="text-gray-500 text-sm pe-lg-4">
                         A dedicated public servant committed to the development of Ghana, advocating for the rights and
@@ -238,30 +239,8 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Navbar Scroll Effect
-        window.addEventListener('scroll', function () {
-            const navbar = document.querySelector('.navbar-custom');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Rolling Text Generation
-        document.querySelectorAll('.rolling-text').forEach(el => {
-            const text = el.getAttribute('data-text');
-            el.innerHTML = text.split('').map((char, i) => `
-                <div class="rolling-text-letter">
-                    <span class="letter-wrapper" style="--delay: ${i * 0.035}s">
-                        <span>${char === ' ' ? '&nbsp;' : char}</span>
-                        <span>${char === ' ' ? '&nbsp;' : char}</span>
-                    </span>
-                </div>
-            `).join('');
-        });
-    </script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
