@@ -2262,3 +2262,10 @@ footer {
     margin-bottom: 0.5rem !important;
   }
 }
+
+/* Custom Form Focus Override */
+.form-control:focus {
+  border-color: #d1d5db;
+  box-shadow: none !important;
+  outline: none;
+}
