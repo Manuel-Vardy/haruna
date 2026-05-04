@@ -28,7 +28,7 @@ const newsData = [
         date: "Apr - 27 - 2026, 16:09",
         source: "Education Desk Report",
         readTime: "1 minute read",
-        image: "images/university.jpg",
+        image: "images/h23.jpg",
         lead: "The Minister of Education, Haruna Iddrisu, has directed the Ghana Tertiary Education Commission (GTEC) to immediately withdraw letters issued on September 30 and October 1, 2025, concerning post-retirement contracts for academic senior members of public universities.",
         content: `
             <p class="mb-4">The directive follows a meeting between the Minister and the leadership of the University Teachers Association of Ghana (UTAG), amid growing concerns over the policy’s implications for the tertiary education sector.</p>
