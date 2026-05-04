@@ -1,5 +1,27 @@
 const newsData = [
     {
+        id: "haruna-iddrisu-ges-pwd-recruitment",
+        title: "Haruna Iddrisu directs GES to reserve recruitment slots for teachers with disabilities",
+        category: "Education",
+        date: "4 May 2026",
+        image: "images/h27.webp",
+        lead: "Education Minister, Haruna Iddrisu, has instructed the Ghana Education Service (GES) to reserve a portion of its teacher recruitment slots specifically for persons with disabilities (PWDs), marking a significant policy shift toward inclusivity in the education sector.",
+        content: `
+            <p class="mb-4">The Minister made this directive during a visit to an examination centre in Sefwi Wiawso, where candidates were preparing for their Basic Education Certificate Examination (BECE). According to him, the move stems from growing awareness about inclusion and equal opportunities within Ghana’s education system.</p>
+            <p class="mb-4">Explaining his motivation for the directive, Mr. Iddrisu recalled lessons learned during the recent May Day celebrations. “On May Day, I learned three lessons. One was GRIDCo. Their placards were very educational on safety. Then I read in Kumasi that blind teachers are also teachers. That was to remind me,” he noted.</p>
+            <blockquote class="border-l-4 border-brand-green ps-5 my-10 py-2">
+                <p class="text-2xl font-bold italic text-dark">“So, Director-General, you are accordingly directed that you must allocate a certain percentage of your recruitment to teachers with disability in your cohort.”</p>
+            </blockquote>
+            <p class="mb-4">Emphasizing the need for deliberate inclusion, he added, “We must have room to respond to that.” This directive is seen as a major step in ensuring that the teaching profession is accessible to all qualified Ghanaians, regardless of physical challenges.</p>
+            <div class="my-10 bg-gray-50 p-8 border-l-4 border-brand-red">
+                <h3 class="h4 font-bold text-brand-red mb-4">Teacher Welfare Concerns</h3>
+                <p class="mb-4 text-lg">On the issue of unpaid teacher allowances, the Minister acknowledged the outstanding concerns and promised to engage the Finance Ministry for a resolution.</p>
+                <p class="italic text-dark font-bold">“The other, I would have to take it up with the Honourable Minister for Finance. It’s about outstanding car maintenance allowance, transfer allowance, and promotion allowance. We’ll see what we do about it,” he stated.</p>
+            </div>
+            <p class="mb-4">The directive highlights a dual focus on progressive policy shifts toward inclusivity while simultaneously addressing long-standing welfare concerns that have been a point of contention within the education sector.</p>
+        `
+    },
+    {
         id: "hike-teacher-recruitment",
         title: "Haruna Iddrisu vows to hike teacher recruitment numbers",
         category: "Education",

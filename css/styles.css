@@ -18,6 +18,7 @@ body {
   border-bottom: none;
   transition: all 0.3s ease;
   box-shadow: none;
+  z-index: 1060; /* Higher than Bootstrap modal (1050) */
 }
 
 .navbar-toggler {
@@ -2263,9 +2264,105 @@ footer {
   }
 }
 
-/* Custom Form Focus Override */
-.form-control:focus {
-  border-color: #d1d5db;
-  box-shadow: none !important;
-  outline: none;
+
+/* Premium Modal Styling */
+.modal-premium .modal-content {
+    background: #ffffff;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.modal-premium-sidebar {
+    background-color: #006b3f; /* Brand Green */
+    color: white;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.modal-premium-sidebar::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -20%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+.modal-premium-form-container {
+    padding: 2.5rem 3rem;
+    background: #fff;
+}
+
+.modal-input-group {
+    margin-bottom: 1.25rem;
+}
+
+.modal-input-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    margin-bottom: 0.35rem;
+    display: block;
+}
+
+.modal-form-control {
+    background-color: #f8fafc;
+    border: 1px solid transparent;
+    padding: 0.75rem 1rem;
+    border-radius: 0;
+    width: 100%;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.modal-form-control:focus {
+    background-color: #fff;
+    border-color: #006b3f;
+    outline: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 107, 63, 0.1);
+}
+
+.modal-form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+}
+
+.btn-submit-premium {
+    background-color: #006b3f;
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn-submit-premium:hover {
+    background-color: #005632;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 107, 63, 0.3);
+}
+
+@media (max-width: 991.98px) {
+    .modal-premium-sidebar {
+        padding: 2rem;
+    }
+    .modal-premium-form-container {
+        padding: 2rem;
+    }
 }
