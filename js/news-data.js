@@ -1,5 +1,33 @@
 const newsData = [
     {
+        id: "education-minister-calls-for-reforms-in-bece",
+        title: "Education Minister calls for reforms in BECE organisation",
+        category: "Education",
+        date: "May - 05 - 2026, 09:57",
+        source: "Severious Kale-Dery",
+        readTime: "2 minutes read",
+        image: "images/h27.webp",
+        lead: "The Minister of Education, Haruna Iddrisu, has urged the West African Examinations Council (WAEC) to institute reforms in the transportation, distribution and handling of examination materials in the country.",
+        content: `
+            <p class="mb-4">Speaking at the Boako M/A examination centre in Sefwi Wiawso in the Western North Region, where he is monitoring the ongoing Basic Education Certificate Examination (BECE), the minister was not happy that 15 minutes into the examination time, question papers were yet to arrive.</p>
+            <p class="mb-4">He, therefore, directed the Director-General (DG) of the Ghana Education Service (GES), who is on the WAEC council, to ensure that reforms were undertaken to give all candidates equal opportunity to start the examination at the same time.</p>
+            <p class="mb-4">Mr Iddrisu also directed officials at the centre to ensure that the delay in the arrival of the materials did not affect the candidates.</p>
+            
+            <h3 class="h4 font-bold text-dark mb-3">Malpractices</h3>
+            <p class="mb-4">The minister entreated invigilators and supervisors to help ensure an incident-free examination.</p>
+            <p class="mb-4">He observed that malpractices remained a major worry in the administration of the examination, and said the GES would not shield anyone engaged in any form of malpractice. He said convicted teachers of malpractices would have their names removed from the GES payroll.</p>
+            
+            <h3 class="h4 font-bold text-dark mb-3">Advice</h3>
+            <p class="mb-4">Mr Iddrisu advised the candidates not to panic but to write the examination with confidence to make themselves, their parents and school proud. He said examination was a normal routine to test what they had been learning over the last nine years and as such, they should be calm.</p>
+            
+            <blockquote class="border-l-4 border-brand-green ps-5 my-10 py-2">
+                <p class="text-2xl font-bold italic text-dark">The minister charged the candidates to be guided by honesty and integrity, saying "honesty and integrity define citizenship, honesty and integrity define patriotism and honesty and integrity must be the hallmark of your moulding".</p>
+            </blockquote>
+            
+            <p class="mb-4">The minister’s entourage, which included the Director-General of the GES, Professor Ernest Kofi Davis, was conducted round by the Metropolitan Chief Executive of Sefwi Wiawso, Dominic Gyasi.</p>
+        `
+    },
+    {
         id: "haruna-iddrisu-ges-pwd-recruitment",
         title: "Haruna Iddrisu directs GES to reserve recruitment slots for teachers with disabilities",
         category: "Education",
