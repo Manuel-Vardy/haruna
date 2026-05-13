@@ -62,6 +62,9 @@ body {
   .navbar-custom {
     padding: 0.75rem 0;
     /* Tighter padding for mobile */
+    background-color: rgba(0, 0, 0, 0.55) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
 
   .navbar-custom .container {
@@ -290,6 +293,13 @@ body {
   z-index: 5;
   /* Above the image, below text */
   pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section::before {
+    opacity: 1; /* Less intrusive on mobile */
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -304,21 +314,32 @@ body {
 @media (max-width: 991.98px) {
   .hero-mobile-bg {
     position: absolute;
-    top: 80px;
-    /* Starts under navbar */
+    top: 0;
+    /* Starts from the top to fill space under navbar */
     right: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/h2.jpg');
-    background-size: 130% auto;
-    /* Made image larger to extend height */
+    background-image: url('../images/211A8619.jpg');
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: top right;
-    /* Starts from the top */
-    opacity: 0.6;
+    background-position: center 100px;
+    /* Pushed down to clear navbar and ensure head visibility */
+    opacity: 0.9;
     z-index: 2;
     /* Below the lines (z-index 5) */
     pointer-events: none;
+  }
+}
+
+/* Tablet Hero Fix - 768px view only */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-mobile-bg {
+    background-size: cover;
+    background-position: center -60px;
+    /* Pushed up to eliminate black space at top */
+    width: 100%;
+    height: 110%;
+    /* Slightly taller to cover black space at bottom */
   }
 }
 
